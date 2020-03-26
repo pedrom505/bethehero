@@ -7,25 +7,31 @@
 
 - [BeTheHero (Backend)](#bethehero-backend)
   - [Table of Contents](#table-of-contents)
-  - [Creating development environment](#creating-development-environment)
-    - [Dependences](#dependences)
-    - [Creating database](#creating-database)
-    - [Using BeTheHero](#using-bethehero)
+  - [Dependences](#dependences)
+  - [Database](#database)
+    - [Create](#create)
+    - [Delete](#delete)
+  - [Using BeTheHero](#using-bethehero)
 
-## Creating development environment
-
-### Dependences
+## Dependences
 ```
 $ npm install
 ```
 
-### Creating database
+## Database
+
+### Create
 
 ```
 $ npx  knex migrate:latest
 ```
 
-### Using BeTheHero
+### Delete
+```
+$ npx  knex migrate:rollback
+```
+
+## Using BeTheHero
 ```
 $ npm start
 ```
